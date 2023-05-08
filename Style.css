@@ -1,0 +1,35 @@
+div{
+    background: yellowgreen;
+}
+h1{
+    text-align: center; 
+    background-color: aqua;
+    padding: 5px;
+    text-shadow: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+#leftRow , #rightRow{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+#leftRow > div , #rightRow > div{
+  background-color:red;
+  height: 40px;
+  width: 40px;
+  margin: 10px; 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
